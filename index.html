@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu Patra | Electronics & Communication Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons, using text if fails -->
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">ANSHU.DEV</a>
+            <div class="menu-btn">☰</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <p class="hero-tagline">Hello, I am</p>
+            <h1>Anshu Patra</h1>
+            <h2 style="font-size: 2rem; color: var(--text-secondary); border: none;">Electronics & Communication
+                Engineer</h2>
+            <p style="margin-top: 1rem; max-width: 600px; color: var(--text-secondary);">
+                Building the future of hardware with expertise in VLSI, RF Systems, and Drone Technology.
+                Co-founder at AirAid & Research Intern at IIT Gandhinagar.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am a B.Tech student in Electronics and Communication Engineering at IIIT Kurnool (2023-2027) with a
+                CGPA of 8.32.
+                My passion lies in bridging the gap between theoretical hardware concepts and real-world applications.
+                From designing mm-Wave spiral inductors to developing autonomous rescue drones, I thrive on solving
+                complex engineering challenges.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>AirAid</h3>
+                    <span class="card-date">Aug 2025 - Present</span>
+                </div>
+                <span class="card-subtitle">Co-founder (Communication Systems) | Kurnool</span>
+                <ul>
+                    <li>Developing a cold-chain delivery drone for a 40km round-trip range, specialized for GPS-denied
+                        and rugged terrain.</li>
+                    <li>Leading R&D on novel metamaterial-based antennas for robust, high-bandwidth satellite
+                        communication (SATCOM) systems.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>IIT Gandhinagar</h3>
+                    <span class="card-date">May 2025 - July 2025</span>
+                </div>
+                <span class="card-subtitle">Research Intern | Gandhinagar, GJ</span>
+                <ul>
+                    <li>Designed a high-Q single-turn on-chip spiral inductor for 60GHz mm-Wave applications in 180nm
+                        CMOS technology.</li>
+                    <li>Achieved a 25% higher Q-factor than conventional designs by developing a reverse ANN-based
+                        optimization model.</li>
+                    <li>Secured a Q-factor of 15+ at 60GHz by optimizing inductor geometry using EM simulation (ANSYS
+                        HFSS) and ML algorithms.</li>
+                    <li>Co-authored and submitted research findings to the VLSI Design and Test Symposium (VLSID) 2025
+                        conference.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>SNN-Based Adaptive Thresholding ECG Processor</h3>
+                <span class="card-subtitle">Academic Project</span>
+                <p>Designed a digital pacemaker controller in Verilog using a Spiking Neural Network (SNN) for adaptive,
+                    noise-resistant heartbeat detection. Implemented dynamic thresholding to adjust sensitivity in
+                    real-time.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Verilog</span>
+                    <span class="tech-tag">SNN</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Nidar: Autonomous Rescue Drone System</h3>
+                <span class="card-subtitle">Government Competition</span>
+                <p>Architected an autonomous two-drone system for flood rescue operations over a 30-hectare area.
+                    Designed for a primary detection drone to autonomously signal a secondary drone for rescue packet
+                    delivery.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Systems Design</span>
+                    <span class="tech-tag">Drone Tech</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>RF Transceiver System Design</h3>
+                <span class="card-subtitle">IIIT Kurnool</span>
+                <p>Built a complete 2.4GHz ISM band transceiver system, integrating LNA, mixer, VCO, and PA components.
+                    Achieved -110dBm receiver sensitivity and 15% reduced signal path loss.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ADS</span>
+                    <span class="tech-tag">KiCad</span>
+                    <span class="tech-tag">RF Design</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>RISC-V Processor Implementation</h3>
+                <span class="card-subtitle">Academic Project</span>
+                <p>Designed a 5-stage pipelined RISC-V (RV32I) processor with hazard detection and forwarding units.
+                    Achieved a 15% performance improvement through branch prediction and cache optimization.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Verilog</span>
+                    <span class="tech-tag">Vivado</span>
+                    <span class="tech-tag">RISC-V</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>Python, C++, Rust</li>
+                    <li>RISC-V Assembly</li>
+                    <li>Verilog, MATLAB</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>CAD Tools</h3>
+                <ul class="skill-list">
+                    <li>Cadence Virtuoso</li>
+                    <li>ANSYS HFSS/Q3D</li>
+                    <li>ADS, KiCad, LTspice</li>
+                    <li>Xilinx Vivado</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Hardware Skills</h3>
+                <ul class="skill-list">
+                    <li>PCB Design</li>
+                    <li>RF Circuit Analysis</li>
+                    <li>VLSI Design</li>
+                    <li>Digital Signal Processing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Simulation</h3>
+                <ul class="skill-list">
+                    <li>Electromagnetic Modeling</li>
+                    <li>SPICE Analysis</li>
+                    <li>System-level Verification</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="container">
+        <h2>Publications</h2>
+        <div class="card">
+            <h3>High-Q Spiral Inductor Design for mm-Wave CMOS Applications</h3>
+            <span class="card-subtitle">Under Review | VLSI Design and Test Symposium (VLSID) 2025</span>
+            <p>A. Patra, T. K. Agarwal.</p>
+        </div>
+    </section>
+
+    <section id="leadership" class="container">
+        <h2>Leadership</h2>
+        <div class="card">
+            <h3>IIITK Electronics Club</h3>
+            <span class="card-subtitle">Founder & Technical Coordinator | 2023 - Present</span>
+            <p>Founded Electronics Club, growing membership to 80+ students. Organized 12+ technical workshops reaching
+                200+ participants. Increased student engagement in electronics projects by 40%.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaborations or opportunities.</p>
+            <div class="social-links">
+                <a href="mailto:patraanshu246@gmail.com" title="Email">✉️</a>
+                <a href="https://github.com/anshu-patra" target="_blank" title="GitHub">💻</a>
+                <a href="#" title="Portfolio">🌐</a>
+            </div>
+            <a href="mailto:patraanshu246@gmail.com" class="btn btn-primary"
+                style="margin-top: 2rem; display: inline-block;">Say Hello</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Anshu Patra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
